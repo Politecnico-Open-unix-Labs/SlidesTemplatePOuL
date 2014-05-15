@@ -5,6 +5,7 @@
 \textclass beamer
 \begin_preamble
 \usetheme{Madrid}
+\usefonttheme{serif}
 % \usecolotheme{crane} %GIALLA
 % more colors & themes http://www.hartwork.org/beamer-theme-matrix/
 
