@@ -6,7 +6,7 @@
 \begin_preamble
 \usetheme{Madrid}
 \usefonttheme{serif}
-% \usecolotheme{crane} %GIALLA
+% \usecolortheme{crane} %GIALLA
 % more colors & themes http://www.hartwork.org/beamer-theme-matrix/
 
 \setbeamercovered{transparent}
@@ -151,7 +151,7 @@ ioni -> Preambolo di LaTeX
 \end_layout
 
 \begin_layout Plain Layout
-per dare un occhio ad un po' di opzioni.
+per dare un occhio ad un po' di opzioni e configurazioni standard.
  FATELO.
 \end_layout
 
@@ -173,7 +173,7 @@ Titolo breve
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 il titolo breve è opzionale (solo se diverso dal titolo esteso) e viene
@@ -262,7 +262,7 @@ Nome evento pedice
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 il nome evento pedice è opzionale (solo se diverso dal nome evento esteso)
@@ -290,6 +290,10 @@ Con una sottosezione
 \begin_layout Standard
 \begin_inset Note Note
 status open
+
+\begin_layout Plain Layout
+PREPARING A TALK: HOW TO
+\end_layout
 
 \begin_layout Plain Layout
 Structuring a talk is a difficult task and the following structure may not
@@ -678,6 +682,27 @@ Le fonti non sono un optional! Piazzale qui!
 \end_layout
 
 \end_deeper
+\begin_layout Frame
+Puoi inserire una 
+\series bold
+blibliografia bibtex
+\series default
+ (se hai già tutto in un file .bib) con Inserisci > Elenco/Indice > Bibliografia
+ Bibtex...
+\end_layout
+
+\begin_layout Frame
+Oppure metti un elenco (puntato), metti una 
+\series bold
+etichetta
+\series default
+ su ogni punto e dopo, laddove devi citare la fonte, inserisci un 
+\series bold
+riferimento
+\series default
+ all'etichetta.
+\end_layout
+
 \begin_layout Separator
 
 \end_layout
