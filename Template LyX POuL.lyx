@@ -1,59 +1,12 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass beamer
 \begin_preamble
-\usetheme{Madrid}
-\usefonttheme{serif}
-% \usecolortheme{crane} %GIALLA
-% more colors & themes http://www.hartwork.org/beamer-theme-matrix/
-
-\setbeamercovered{transparent}
-% transizioni: gli elementi nascosti vengono visualizzati in trasparenza
-
-%\beamerdefaultoverlayspecification{<+->}
-% transizioni: di default i paragrafi e gli elenchi (puntati e numerati) vengono scoperti passo per passo.
-% usate con cautela
-
-\usenavigationsymbolstemplate{}
-% hide navigation symbols (bottom-right corner in every slide)
-
-\titlegraphic{\includegraphics[height=2cm]{poul-logo.pdf}}
-% Aggiunge il logo del POuL in prima pagina
-% Ricordate che dovete sempre avere il logo in pdf nella cartella dove avete il documento (poul-logo.pdf)
-
-\IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
-% sets nice fonts (if available)
-
-% inserisce AUTOMATICAMENTE una slide di titolo sezione all'inizio di OGNI sezione: in questa slide viene visualizzato l'indice delle sezioni, evidenziata quella corrente.
-\AtBeginSection[]
-{
-  \begin{frame}<beamer>
-    \frametitle{Sezione \thesection}
-    \tableofcontents[currentsection]
-  \end{frame}
-}
-
-% ridefinisce il footer per evitare di includere \institute tra () accanto al nome
-% LyX 2.1 pare abbia risolto questo bug. Lascio questo codice commentato, rimane utile per nascondere forzatamente \institute dal pedice nel caso si desiderasse aggiungerlo in seguito
-% fonte: http://tex.stackexchange.com/questions/35166/how-can-i-remove-the-institute-from-the-author-footline-on-beamer
-%\setbeamertemplate{footline}
-%{
-%  \leavevmode%
-%  \hbox{%
-%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-%    \usebeamerfont{author in head/foot}\insertshortauthor%~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}
- % \end{beamercolorbox}%
- % \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-%    \usebeamerfont{title in head/foot}\insertshorttitle
-%  \end{beamercolorbox}%
-%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-%    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-%    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
-%  \end{beamercolorbox}}%
-%  \vskip0pt%
-%}
+\usetheme{poul}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -61,16 +14,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -147,12 +100,18 @@ ocumento -> Imposta
 \bar under
 z
 \bar default
-ioni -> Preambolo di LaTeX 
+ioni -> Preambolo di \SpecialChar LaTeX
+ 
 \end_layout
 
 \begin_layout Plain Layout
-per dare un occhio ad un po' di opzioni e configurazioni standard.
- FATELO.
+Per decidere che tema mettere, se non volete fare niente il tema impostato
+ di default è il tema approvato POuL.
+\end_layout
+
+\begin_layout Plain Layout
+Se volete sapere meglio come funziona la baracca andate su Aiuto -> Manuali
+ Specifici -> Presentazione Beamer e RTFM
 \end_layout
 
 \end_inset
@@ -192,47 +151,28 @@ Sottotitolo dell'Evento
 \begin_inset Newline newline
 \end_inset
 
-(se ti va puoi anche usare un paio di righe)
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-per andare a capo così Ctrl+Enter.
- Non abusarne.
-\end_layout
-
-\end_inset
-
-
+Seconda Riga del Sottotitolo(solo in casi eccezionali)
 \end_layout
 
 \begin_layout Author
 Nome Autore
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-href{mailto:tuonome.suonome@quarantottozero.ics}{
-\backslash
-nolinkurl{tuonome.suonome@quarantottozero.ics}}
-\end_layout
-
-\end_inset
-
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Autore pedice
+Autore Breve
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+\begin_inset CommandInset href
+LatexCommand href
+name "La tua Email"
+type "mailto:"
 
 \end_inset
 
@@ -241,7 +181,47 @@ Autore pedice
 status collapsed
 
 \begin_layout Plain Layout
-dai...interpola le annotazioni e dimmi cosa ti aspetti di dover fare qui.
+Cliccate su Ipercollegamento: La tua Email
+\end_layout
+
+\begin_layout Plain Layout
+Mettete nel campo 
+\begin_inset Quotes fld
+\end_inset
+
+Destinazione
+\begin_inset Quotes frd
+\end_inset
+
+ la vostra Email
+\end_layout
+
+\begin_layout Plain Layout
+cancellate 
+\begin_inset Quotes fld
+\end_inset
+
+La tua Email
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Cliccate su 
+\begin_inset Quotes fld
+\end_inset
+
+Applica
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Fine
 \end_layout
 
 \end_inset
@@ -250,28 +230,36 @@ dai...interpola le annotazioni e dimmi cosa ti aspetti di dover fare qui.
 \end_layout
 
 \begin_layout Date
-Nome Evento (per esteso)
+Data
 \begin_inset Argument 1
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Nome evento pedice
+Data
 \end_layout
 
 \end_inset
 
 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-il nome evento pedice è opzionale (solo se diverso dal nome evento esteso)
- e viene visualizzato a pedice.
 \end_layout
 
+\begin_layout TitleGraphic
+\begin_inset Graphics
+	filename logowhite.svg
+	height 2cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Plain Layout
-Se desideri mantenere il nome evento esteso anche a pedice, cancella il
- campo nome evento breve (e non solo il suo contenuto).
+Il logo in questo caso è bianco perché il fondo è nero, se usate un altro
+ tema a fondo bianco cliccate sul logo e impostate come immagine logoblack.svg
 \end_layout
 
 \end_inset
@@ -361,6 +349,10 @@ A title should summarize the slide in an understandable fashion for anyone
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -399,7 +391,8 @@ are e distrarre i suoi compagni.
 \end_layout
 
 \begin_layout Itemize
-Ora mi interrompo con una pausa forzata (linea tratteggiata in LyX)
+Ora mi interrompo con una pausa forzata (linea tratteggiata in \SpecialChar LyX
+)
 \end_layout
 
 \begin_layout Pause
@@ -411,15 +404,20 @@ E ricompaio una transizione dopo
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-ricorda di inserire un Separatore tra una dipositiva e l'altra.
- (Metterli in automatico non è più di moda da LyX 2.1)
+ALT+P ENTER per chiudere una slide e passare a quella successiva, ALT+P
+ SHIFT+ENTER per chiudere una slide e passare a quella successiva se state
+ indentando(TAB)
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -437,6 +435,10 @@ status open
 esempio elenchi
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -492,6 +494,10 @@ un
 
 \begin_layout Enumerate
 elenco
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -501,6 +507,10 @@ numerato
 
 \begin_layout Enumerate
 a più livelli
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -519,7 +529,10 @@ con gli elenchi annidati
 \end_deeper
 \end_deeper
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -534,6 +547,10 @@ prova anche i blocchi
 \end_inset
 
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -613,6 +630,10 @@ In un blocco posso fare domande?
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -626,11 +647,19 @@ io posso rispondere
 
 \begin_layout Itemize
 usando un elenco
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 dentro un elenco
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -673,6 +702,10 @@ Fonti
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -703,7 +736,10 @@ riferimento
  all'etichetta.
 \end_layout
 
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -719,6 +755,10 @@ status open
 Fine
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -758,6 +798,25 @@ ricordate di configurare inkscape per le immagini vettoriali (se non lo
  avete già fatto - e voi lo avete già fatto, vero?!)
 \end_layout
 
+\begin_layout Plain Layout
+Se non avete configurato Inkscape andate qui 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://wiki.lyx.org/Tips/UseInkscapeSVGImages
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -768,7 +827,7 @@ ricordate di configurare inkscape per le immagini vettoriali (se non lo
 \align center
 \begin_inset Graphics
 	filename by-sa.svg
-	height 0.9cm
+	height 2cm
 
 \end_inset
 
