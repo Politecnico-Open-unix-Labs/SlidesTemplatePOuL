@@ -7,6 +7,7 @@
 \textclass beamer
 \begin_preamble
 \usetheme{poul}
+\definecolor{orange}{RGB}{255,198,10}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -277,7 +278,7 @@ Con una sottosezione
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 PREPARING A TALK: HOW TO
@@ -376,7 +377,11 @@ e qui un elenco puntato
 \end_layout
 
 \begin_layout Itemize
-Vado a capo e ti mostro una nota a piè di pagina
+Vado a capo e ti mostro una 
+\color orange
+nota
+\color inherit
+ a piè di pagina
 \begin_inset Foot
 status open
 
