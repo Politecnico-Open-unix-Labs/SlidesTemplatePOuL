@@ -3,24 +3,27 @@
 % Default theme as a base
 \usetheme{default}
 \definecolor{backgroundcustomcolor}{RGB}{0,0,0}
-\setbeamercolor{background canvas}{bg=backgroundcustomcolor}
+\definecolor{orange}{RGB}{255,198,10}
+\setbeamercolor{background canvas}{bg=black}
 
 % Font
 \renewcommand\sfdefault{phv}
 \renewcommand\familydefault{\sfdefault}
 \setbeamerfont{title}{size=\Huge}
 \setbeamerfont{frametitle}{size=\huge}
-\setbeamercolor{frametitle}{bg=, fg=white}
-\setbeamercolor{title}{bg=, fg=white}
+\setbeamercolor{frametitle}{bg=, fg=orange}
+\setbeamercolor{title}{bg=, fg=orange}
 \setbeamercolor{normal text}{bg=, fg=white}
 
 % Structure
-\setbeamertemplate{items}[circle]
-\setbeamercolor{structure}{fg=white}
-\setbeamercolor{item}{fg=gray}
-\setbeamercolor{itemize item}{fg=white}
-\setbeamercolor{itemize subitem}{fg=white}
-\setbeamercolor{itemize subsubitem}{fg=white}
+\setbeamertemplate{itemize items}[circle]
+\setbeamercolor{itemize item}{fg=orange}
+\setbeamercolor{itemize subitem}{fg=orange}
+\setbeamercolor{itemize subsubitem}{fg=orange}
+\setbeamercolor{enumerate item}{fg=orange}
+\setbeamercolor{enumerate subitem}{fg=orange}
+\setbeamercolor{enumerate subsubitem}{fg=orange}
+\setbeamercolor{structure}{fg=orange}
 
 % Features
 \setbeamertemplate{headline}{}
@@ -30,5 +33,3 @@
 \IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
 % sets nice fonts (if available)
 \usefonttheme{structurebold}
-%animatelines
-\usepackage{animate}
