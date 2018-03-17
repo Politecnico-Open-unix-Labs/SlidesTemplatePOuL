@@ -6,8 +6,13 @@
 \origin unavailable
 \textclass beamer
 \begin_preamble
+% Tema GIALLO di Lapo (2017)
 \usetheme{poul}
 \definecolor{orange}{RGB}{255,198,10}
+
+% Per qualche motivo fixa il fatto che le footnote spariscono a caso:
+\let\oldfootnote\footnote
+\renewcommand\footnote[1][]{\oldfootnote[frame,#1]}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
